@@ -15,6 +15,7 @@ def count_words(filename):
         words = contents.split()
         num_words = len(words)
         print("The file '{}' has about {} words. ".format(filename, num_words))
+        print("And {} of them are 'the'".format(contents.lower().count('the')))
 
 
 filename = 'alice.txt'
